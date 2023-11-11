@@ -4,15 +4,7 @@ title: Русский язык
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/responsive.css">
-	<link rel="shortcut icon" href="../img/ege-logo.svg" type="image/x-icon">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css" rel="stylesheet" type="text/css"/>
-	<title>EGE SITE</title>
-</head>
+	{% include head.html %}
 <body>
 	<header>
 		<a href="../index.html" class="logo">
@@ -183,10 +175,6 @@ title: Русский язык
 			</article>
 		</section>
 	</main>
-	<footer>
-		<p>
-			© 2023
-		</p>
-	</footer>
+	{% include footer.html %}
 </body>
 </html>
