@@ -9,17 +9,22 @@
 	<nav>
 		<ul class="nav-ul">
 			<li>
-				<a class={% if {{ permalink }} == "/ru/ru" %}
+				<a class={% if {{ page.page.permalink }} == "index" %}
+				{{ "active" }}
+				{% endif %} href={{"/index" | responsive_url }}>Главная</a>
+			</li>
+			<li>
+				<a class={% if {{ page.page.permalink }} == "/ru/ru" %}
 				{{ "active" }}
 				{% endif %} href={{"/ru/ru" | responsive_url }}>Русский язык</a>
 			</li>
 			<li>
-				<a class={% if {{ permalink }} == "/math/math" %}
+				<a class={% if {{ page.page.permalink }} == "/math/math" %}
 				{{ "active" }}
 				{% endif %} href={{"/math/math" | responsive_url }}>Математика</a>
 			</li>
 			<li>
-				<a class={% if {{ permalink }} == "/inf/inf" %}
+				<a class={% if {{ page.page.permalink }} == "/inf/inf" %}
 				{{ "active" }}
 				{% endif %} href={{"/inf/inf" | responsive_url }}>Информатика</a>
 			</li>
@@ -33,22 +38,22 @@
 		</summary>
 		<ul class="nav-ul">
 			<li>
-				<a class={% if {{ permalink }} == "index" %}
+				<a class={% if {{ page.permalink }} == "index" %}
 				{{ "active" }}
 				{% endif %} href={{"/index" | responsive_url }}>Главная</a>
 			</li>
 			<li>
-				<a class={% if {{ permalink }} == "/ru/ru" %}
+				<a class={% if {{ page.permalink }} == "/ru/ru" %}
 				{{ "active" }}
 				{% endif %} href={{"/ru/ru" | responsive_url }}>Русский язык</a>
 			</li>
 			<li>
-				<a class={% if {{ permalink }} == "/math/math" %}
+				<a class={% if {{ page.permalink }} == "/math/math" %}
 				{{ "active" }}
 				{% endif %} href={{"/math/math" | responsive_url }}>Математика</a>
 			</li>
 			<li>
-				<a class={% if {{ permalink }} == "/inf/inf" %}
+				<a class={% if {{ page.permalink }} == "/inf/inf" %}
 				{{ "active" }}
 				{% endif %} href={{"/inf/inf" | responsive_url }}>Информатика</a>
 			</li>
