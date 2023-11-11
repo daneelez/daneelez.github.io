@@ -9,16 +9,24 @@
 	<nav>
 		<ul class="nav-ul">
 			<li>
-				<a href={{"/index" | responsive_url }}>Главная</a>
+				<a class={% if {{ permalink }} == "/index" %}
+				{{ "active" }}
+				{% endif %} href={{"/index" | responsive_url }}>Главная</a>
 			</li>
 			<li>
-				<a href={{"/ru/ru" | responsive_url }}>Русский язык</a>
+				<a class={% if {{ permalink }} == "/ru/ru" %}
+				{{ "active" }}
+				{% endif %} href={{"/ru/ru" | responsive_url }}>Русский язык</a>
 			</li>
 			<li>
-				<a href={{"/math/math" | responsive_url }}>Математика</a>
+				<a class={% if {{ permalink }} == "/math/math" %}
+				{{ "active" }}
+				{% endif %} href={{"/math/math" | responsive_url }}>Математика</a>
 			</li>
 			<li>
-				<a href={{"/inf/inf" | responsive_url }}>Информатика</a>
+				<a class={% if {{ permalink }} == "/inf/inf" %}
+				{{ "active" }}
+				{% endif %} href={{"/inf/inf" | responsive_url }}>Информатика</a>
 			</li>
 		</ul>
 	</nav>
@@ -30,16 +38,24 @@
 		</summary>
 		<ul class="nav-ul">
 			<li>
-				<a class='active' href={{"/index" | responsive_url }}>Главная</a>
+				<a class={% if {{ permalink }} == "/index" %}
+				{{ "active" }}
+				{% endif %} href={{"/index" | responsive_url }}>Главная</a>
 			</li>
 			<li>
-				<a href={{"/ru/ru" | responsive_url }}>Русский язык</a>
+				<a class={% if {{ permalink }} == "/ru/ru" %}
+				{{ "active" }}
+				{% endif %} href={{"/ru/ru" | responsive_url }}>Русский язык</a>
 			</li>
 			<li>
-				<a href={{"/math/math" | responsive_url }}>Математика</a>
+				<a class={% if {{ permalink }} == "/math/math" %}
+				{{ "active" }}
+				{% endif %} href={{"/math/math" | responsive_url }}>Математика</a>
 			</li>
 			<li>
-				<a href={{"/inf/inf" | responsive_url }}>Информатика</a>
+				<a class={% if {{ permalink }} == "/inf/inf" %}
+				{{ "active" }}
+				{% endif %} href={{"/inf/inf" | responsive_url }}>Информатика</a>
 			</li>
 		</ul>
 </header>
