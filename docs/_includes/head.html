@@ -1,9 +1,15 @@
+---
+style: style.css
+responsive: responsive.css
+logo: ege-logo.svg
+---
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href={{"/css/style.css" | relative_url }}>
-	<link rel="stylesheet" href={{"/css/responsive.css" | relative_url }}>
-	<link rel="shortcut icon" href={{"/img/ege-logo.svg" | relative_url }} type="image/x-icon">
+	<link rel="stylesheet" href={{{% link {{ page.style }} %} | relative_url }}>
+	<link rel="stylesheet" href={{{% link {{ page.responsive }} %} | relative_url }}>
+	<link rel="shortcut icon" href={{{% link {{ page.logo}} %} | relative_url }} type="image/x-icon">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css" rel="stylesheet" type="text/css"/>
 	<title>{{page.title}}</title>
 </head>
