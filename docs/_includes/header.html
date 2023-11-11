@@ -9,9 +9,9 @@
 	<nav>
 		<ul class="nav-ul">
 			<li>
-				<a class={% if {{ permalink }} == "/index" %}
+				<a class={% if {{ permalink }} == "index" %}
 				{{ "active" }}
-				{% endif %} href={{"index" | responsive_url }}>Русский язык</a>
+				{% endif %} href={{"/index" | responsive_url }}>Русский язык</a>
 			</li>
 			<li>
 				<a class={% if {{ permalink }} == "/ru/ru" %}
@@ -38,9 +38,9 @@
 		</summary>
 		<ul class="nav-ul">
 			<li>
-				<a class={% if {{ permalink }} == "/index" %}
+				<a class={% if {{ permalink }} == "index" %}
 				{{ "active" }}
-				{% endif %} href={{"index" | responsive_url }}>Главная</a>
+				{% endif %} href={{"/index" | responsive_url }}>Главная</a>
 			</li>
 			<li>
 				<a class={% if {{ permalink }} == "/ru/ru" %}
