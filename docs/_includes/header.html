@@ -9,23 +9,23 @@
 	<nav>
 		<ul class="nav-ul">
 			<li>
-				<a class={% if page.permalink == "/index" %}
-				class="active",
+				<a {% if page.permalink == "/index" %}
+				class="active"
 				{% endif %} href={{"/index" | responsive_url }}>Главная</a>
 			</li>
 			<li>
-				<a class={% if page.permalink == "/ru/ru" %}
-				class="active",
+				<a {% if page.permalink == "/ru/ru" %}
+				class="active"
 				{% endif %} href={{"/ru/ru" | responsive_url }}>Русский язык</a>
 			</li>
 			<li>
-				<a class={% if page.permalink == "/math/math" %}
-				class="active",
+				<a {% if page.permalink == "/math/math" %}
+				class="active"
 				{% endif %} href={{"/math/math" | responsive_url }}>Математика</a>
 			</li>
 			<li>
-				<a class={% if page.permalink == "/inf/inf" %}
-				class="active",
+				<a {% if page.permalink == "/inf/inf" %}
+				class="active"
 				{% endif %} href={{"/inf/inf" | responsive_url }}>Информатика</a>
 			</li>
 		</ul>
@@ -38,23 +38,23 @@
 		</summary>
 		<ul class="nav-ul">
 			<li>
-				<a class={% if page.permalink == "/index" %}
-				class="active",
+				<a {% if page.permalink == "/index" %}
+				class="active"
 				{% endif %} href={{"/index" | responsive_url }}>Главная</a>
 			</li>
 			<li>
-				<a class={% if page.permalink == "/ru/ru" %}
-				class="active",
+				<a {% if page.permalink == "/ru/ru" %}
+				class="active"
 				{% endif %} href={{"/ru/ru" | responsive_url }}>Русский язык</a>
 			</li>
 			<li>
-				<a class={% if page.permalink == "/math/math" %}
-				class="active",
+				<a {% if page.permalink == "/math/math" %}
+				class="active"
 				{% endif %} href={{"/math/math" | responsive_url }}>Математика</a>
 			</li>
 			<li>
-				<a class={% if page.permalink == "/inf/inf" %}
-				class="active",
+				<a {% if page.permalink == "/inf/inf" %}
+				class="active"
 				{% endif %} href={{"/inf/inf" | responsive_url }}>Информатика</a>
 			</li>
 		</ul>
