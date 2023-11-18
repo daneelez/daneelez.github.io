@@ -1,0 +1,40 @@
+<section class="main-section">
+	<p>
+		<img src="../img/circle-info.svg">
+			<a href=
+
+			{% if page.permalink contains "ru" %}
+			{{"/ru/ru_theory" | responsive_url }}
+			{% endif %}
+
+			{% if page.permalink contains "math" %}
+			{{"/math/math_theory" | responsive_url }}
+			{% endif %}
+
+			{% if page.permalink contains "inf" %}
+			{{"/inf/inf_theory" | responsive_url }}
+			{% endif %}
+
+			>Теория</a>
+	</p>
+	<p>
+		<img src="../img/circle-info.svg">
+			<a href=
+			
+			{% if page.permalink contains "ru" %}
+			{{"/ru/ru_practise" | responsive_url }}
+			{% endif %}
+
+			{% if page.permalink contains "math" %}
+			{{"/math/math_practise" | responsive_url }}
+			{% endif %}
+
+			{% if page.permalink contains "inf" %}
+			{{"/inf/inf_practise" | responsive_url }}
+			{% endif %}
+			
+			>Практика</a>
+	</p>
+	<article>
+	</article>
+</section>

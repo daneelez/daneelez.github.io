@@ -15,16 +15,17 @@ body {
 
 footer {
 	background: #161F31;
-	position: absolute;
 	width: 100%;
-	height: 3vh;
+	position: absolute;
+	height: max(25px, 4vh);
 	bottom: 0;
 }
 
 footer p {
 	color: #94A3B8;
 	text-align: center;
-	transform: translate(0, 50%);
+	display: grid;
+	margin-top: 0.5rem;
 }
 
 summary {
@@ -41,21 +42,21 @@ header {
 	display: flex;
 	background-color: #161F31;
 	width: 100%;
-	height: 8vh;
+	height: max(80px, 8vh);
 	align-items: center;
 }
 
 .logo {
-	max-width: 4%;
+	width: 4%;
 	align-self: center;
-	padding: 8px 0 5px 18px;
+	padding-left: 8px;
 }
 
 .nav-ul {
 	display: flex;
 	font-weight: 400;
-	column-gap: 4vw;
-	font-size: calc(8px + 2vh);
+	column-gap: 3vw;
+	font-size: 1.5rem;
   align-items: center;
 	padding-left: 12vw;
 	padding-right: 2vw;
@@ -80,7 +81,7 @@ aside {
 	background: linear-gradient(184.67deg, #F8FAFC 0%, #E0E7FF 100%);
 	position: fixed;
 	padding-left: 1.5rem;
-	padding-top: 1.5rem;
+	margin-top: max(80px, 8vh);
 	padding-right: 3.5rem;
 	min-height: 100%;
 }
@@ -167,13 +168,14 @@ summary::-webkit-details-marker {
 /* MAIN */
 
 main {
-	margin-top: 8vh;
+	margin-top: min(80px, 8vh);
 	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 	margin-left: 16rem;
 	min-height: 100%;
 }
 
 .main-ul {
+	padding-top: min(10px, 1vh);
 	display: flex;
 	align-items: center;
 }
