@@ -231,8 +231,7 @@ main {
 }
 
 .information-div {
-	display: flex;
-	flex-direction: column;
+	display: inline-flex;
 	padding: 0 1.5rem 0 1.5rem;
 }
 
@@ -262,6 +261,8 @@ main {
 
 .information {
 	padding-bottom: 1rem;
+	display: flexbox;
+	flex-direction: column;
 }
 
 /* TASKS SECTION */
