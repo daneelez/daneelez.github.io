@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html {
-  height: 92vh;
+	height: calc(100vh - max(80px, 8vh));
 }
 
 body {
@@ -49,7 +49,7 @@ header {
 .logo {
 	width: 4%;
 	align-self: center;
-	padding-left: 8px;
+	margin-left: 8px;
 }
 
 .nav-ul {
@@ -58,8 +58,8 @@ header {
 	column-gap: 3vw;
 	font-size: 1.5rem;
   align-items: center;
-	padding-left: 12vw;
-	padding-right: 2vw;
+	margin-left: 12vw;
+	margin-right: 2vw;
 }
 
 .nav-ul li a {
@@ -78,12 +78,12 @@ header {
 /* ASIDE */
 
 aside {
-	background: linear-gradient(184.67deg, #F8FAFC 0%, #E0E7FF 100%);
+	background: linear-gradient(156deg, #F8FAFC 0%, #E0E7FF 100%);
 	position: fixed;
+	padding-top: min(40px, 4vh);
 	padding-left: 1.5rem;
-	margin-top: max(80px, 8vh);
-	padding-right: 3.5rem;
-	min-height: 100%;
+	padding-right: 3rem;
+	height: 100vh;
 }
 
 .aside-ul {
@@ -168,10 +168,12 @@ summary::-webkit-details-marker {
 /* MAIN */
 
 main {
-	margin-top: min(80px, 8vh);
-	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+	margin-top: max(80px, 8vh);
+	padding: 0 1.5rem 1.5rem 1.5rem;
 	margin-left: 16rem;
-	min-height: 100%;
+	min-height: calc(92vh - max(80px, 8vh));
+	background: url(../img/bubbles/2.svg);
+	background-repeat: no-repeat;
 }
 
 .main-ul {
