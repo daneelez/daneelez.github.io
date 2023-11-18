@@ -231,13 +231,8 @@ main {
 }
 
 .information-div {
-	display: inline-flex;
-	padding: 0 1.5rem 0 1.5rem;
-}
-
-.directions .information-div {
 	display: flex;
-	padding: 0rem 1.5rem 0.5rem 1.5rem;
+	padding: 0 1.5rem 1rem 1.5rem;
 }
 
 .information-div img {
@@ -255,14 +250,8 @@ main {
 }
 
 .directions {
-	padding-top: 0.5rem;
+	padding-top: 1rem;
 	border-top: 2px solid #F1F5F9;;
-}
-
-.information {
-	padding-bottom: 1rem;
-	display: flexbox;
-	flex-direction: column;
 }
 
 /* TASKS SECTION */
