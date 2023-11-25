@@ -1,3 +1,18 @@
+{% if page.permalink contains "index" %}
+<section class="main-section">
+	<article>
+	<p>
+		Добро пожаловать на наш сайт для подготовки к ЕГЭ! У нас вы найдете всю необходимую информацию и ресурсы, чтобы успешно справиться с экзаменами.
+	</p>
+	<p>
+		Подготовка к ЕГЭ достаточно сложная задача, но мы здесь, чтобы помочь вам достичь успеха.
+	</p>
+	</article>
+	<div class="main-image">
+		<img src={{"\img\images.jpg" | responsive_url }} alt="ege-image">
+	</div>
+</section>
+{% elsif page.permalink == "ru/ru" or page.permalink == "math/math" or page.permalink == "inf/inf" %}
 <section class="main-section">
 	<p>
 		<img src="../img/circle-info.svg">
@@ -38,3 +53,6 @@
 	<article>
 	</article>
 </section>
+{% else %}
+
+{% endif %}
