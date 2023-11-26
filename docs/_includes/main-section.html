@@ -9,13 +9,13 @@
 	</p>
 	</article>
 	<div class="main-image">
-		<img src={{"\img\images.jpg" | responsive_url }} alt="ege-image">
+		<img src={{"/img/images.jpg" | responsive_url }} alt="ege-image">
 	</div>
 </section>
 {% elsif page.permalink == "ru/ru" or page.permalink == "math/math" or page.permalink == "inf/inf" %}
 <section class="main-section">
 	<p>
-		<img src="../img/circle-info.svg">
+		<img src={{"/img/circle-info.svg" | responsive_url }}>
 			<a href=
 
 			{% if page.permalink contains "ru" %}
@@ -33,7 +33,7 @@
 			>Теория</a>
 	</p>
 	<p>
-		<img src="../img/circle-info.svg">
+		<img src={{"/img/circle-info.svg" | responsive_url }}>
 			<a href=
 			
 			{% if page.permalink contains "ru" %}

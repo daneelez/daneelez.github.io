@@ -61,7 +61,7 @@
 
 }
 
-@media (max-width: 424px) {
+@media (max-width: 670px) {
 
 	.h1-main {
 		display: none;
@@ -69,8 +69,21 @@
 
 }
 
-@media screen and (max-height: 600px) {
+@media (max-width: 440px) {
+
 	.main-ul {
-		margin-top: max(40px, 8vh);
+			flex-direction: column;
+			align-items: baseline;
 	}
+
+	.main-ul li {
+		margin-bottom: 0.5rem;
+	}
+
+	.main-ul li a {
+		vertical-align: 0.2rem;
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
 }
