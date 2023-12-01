@@ -346,10 +346,11 @@ main {
 	flex-direction: column;
 	padding-left: 2rem;
 	padding-bottom: 1.5rem;
+	padding-right: 2rem;
 	font-size: 1.2rem;
 }
 
-.theoryblock-div h3 {
+.theoryblock-div h3, a {
 	display: inline;
 	margin-left: -0.5rem;
 	text-decoration: none;
@@ -360,4 +361,37 @@ main {
 
 .theoryblock-div img {
 	margin: 2rem 2rem 0.5rem 0;
+}
+
+.theorytablet-section {
+	padding-bottom: 1rem;
+	max-width: 760px;
+	display: flex;
+	margin-bottom: 2.5rem;
+}
+
+.theorytablet-div {
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
+	padding-bottom: 1.5rem;
+	padding-right: 2rem;
+	font-size: 1.2rem;
+}
+
+.theorytablet-div h3 {
+	display: flex;
+	margin-left: -0.5rem;
+	text-decoration: none;
+	color: #6366F1;
+	font-weight: 500;
+	font-size: 1.5rem;
+	justify-content: center;
+}
+
+.theorytablet-div p {
+	display: table;
+  margin: 0 auto; /* для центрирования display: table; не нужно указывать ширину блока, она рассчитывается самостоятельно */ 
+  white-space: pre-line; /* не нужен <br> */ 
+  word-wrap: break-word; /* чтобы слова переносились на маленьком экране */ 
 }
