@@ -18,9 +18,11 @@
 
 	.header-menu {
 		display: block;
-		padding-right: 3%;
-		position: fixed;
+		padding-right: 1rem;
+		position: absolute;
 		right: 0;
+		top: 0;
+		padding-top: 1rem;
 	}
 
 	.header-menu summary {
@@ -40,18 +42,18 @@
 	}
 
 	.nav-ul {
+		position: absolute;
+		display: flex;
 		flex-direction: column;
 		font-weight: 400;
-		position: absolute;
-		background-color: #161F31;
 		right: 0;
-    font-size: 1.5rem;
-    line-height: 2rem;
-		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 1rem;
+		background-color: rgb(22, 31, 49);
+		margin-right: -1rem;
 	}
 
 	.header-menu li {
-		margin-bottom: 0.5rem;
+		padding: 0.5rem 2rem;
 	}
 
 	.task-div {
@@ -67,23 +69,8 @@
 		display: none;
 	}
 
-}
-
-@media (max-width: 440px) {
-
-	.main-ul {
-			flex-direction: column;
-			align-items: baseline;
-	}
-
-	.main-ul li {
-		margin-bottom: 0.5rem;
-	}
-
-	.main-ul li a {
-		vertical-align: 0.2rem;
-		font-size: 1.5rem;
-		font-weight: 500;
+	.main-nav {
+	padding-bottom: 1rem;
 	}
 
 }

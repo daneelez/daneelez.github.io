@@ -216,6 +216,7 @@ main {
 	text-decoration: none;
 	font-size: 1.5rem;
 	font-weight: 500;
+	margin-left: 0.25rem;
 	color: #475569;
 }
 
@@ -256,7 +257,7 @@ main {
 
 .information-div {
 	display: flex;
-	padding: 0 1.5rem 1rem 1.5rem;
+	padding: 0 0 0.5rem 0.75rem;
 }
 
 .information-div img {
@@ -265,12 +266,15 @@ main {
 
 .information-div p {
 	color: #F1F5F9;
-	margin-left: 0.5rem;
+	font-size: 1rem;
+	padding-left: 0.5rem;
 }
 
 .information-div p a {
 	color: #F1F5F9;
 	text-decoration: none;
+	font-size: 1rem;
+	padding-left: 0.5rem;
 }
 
 .directions {
@@ -353,7 +357,6 @@ main {
 .theoryblock-div h3, a {
 	display: inline;
 	margin-left: -0.5rem;
-	text-decoration: none;
 	color: #6366F1;
 	font-weight: 500;
 	font-size: 1.5rem;
@@ -368,15 +371,16 @@ main {
 	max-width: 760px;
 	display: flex;
 	margin-bottom: 2.5rem;
+	flex-wrap: wrap;
 }
 
 .theorytablet-div {
 	display: flex;
 	flex-direction: column;
-	padding-left: 2rem;
 	padding-bottom: 1.5rem;
-	padding-right: 2rem;
 	font-size: 1.2rem;
+	flex-basis: 27%;
+	margin: 0 auto;
 }
 
 .theorytablet-div h3 {
@@ -394,4 +398,32 @@ main {
   margin: 0 auto; /* для центрирования display: table; не нужно указывать ширину блока, она рассчитывается самостоятельно */ 
   white-space: pre-line; /* не нужен <br> */ 
   word-wrap: break-word; /* чтобы слова переносились на маленьком экране */ 
+}
+
+.theorytablet-section table {
+	margin: auto;
+  border: 2px solid rgb(200, 200, 200);
+	box-shadow: 4px 4px 2px 1px white;
+}
+
+.theorytablet-section td, .theorytablet-section th {
+	padding: 0.5rem;
+	border: 2px solid rgb(190, 190, 190);
+	text-align: center;
+	vertical-align: middle;
+	white-space: pre-line;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+th[scope='col'] {
+  background-color: #161F31;;
+  color: #fff;
+}
+
+th[scope='row'] {
+  background-color: #6366F1;
+	color: #fff;
 }
