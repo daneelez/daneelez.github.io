@@ -86,7 +86,7 @@ aside {
 	position: fixed;
 	padding-top: min(40px, 4vh);
 	padding-left: 1.5rem;
-	padding-right: 3rem;
+	padding-right: 4rem;
 	height: 100vh;
 }
 
@@ -357,14 +357,21 @@ main {
 .theoryblock-div h3, a {
 	display: inline;
 	margin-left: -0.5rem;
+	text-decoration: none;
 	color: #6366F1;
 	font-weight: 500;
 	font-size: 1.5rem;
 }
 
+.theoryblock-div p {
+	white-space: pre-line;
+}
+
 .theoryblock-div img {
 	margin: 2rem 2rem 0.5rem 0;
 }
+
+/* THEORYTABLET SECTION */
 
 .theorytablet-section {
 	padding-bottom: 1rem;
@@ -426,4 +433,25 @@ th[scope='col'] {
 th[scope='row'] {
   background-color: #6366F1;
 	color: #fff;
+}
+
+/* PRACTISE SECTION */
+
+.practise-section {
+	padding-bottom: 1rem;
+	max-width: 760px;
+	border: 1px solid rgba(0, 0, 255, .2);
+	background-color: rgb(255, 255, 255);
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+	border-radius: 14px;
+	margin-bottom: 2.5rem;
+}
+
+.practise-section h2 {
+	font-size: 2rem;
+	font-weight: 500;
+	color: #161F31;
+	padding-bottom: 1rem;
+	padding-top: 0.5rem;
+	margin-left: 1rem;
 }
