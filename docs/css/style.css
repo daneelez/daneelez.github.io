@@ -190,7 +190,7 @@ main {
 .main-ul li a {
 	text-decoration: none;
 	color: #475569;
-	vertical-align: 0.2rem;
+	vertical-align: 0.3rem;
 	font-size: 1.2rem;
 	font-weight: 500;
 }
@@ -286,6 +286,12 @@ main {
 
 .task-section {
 	padding-bottom: 1rem;
+	border: 1px solid rgba(0, 0, 255, .2);
+	background-color: rgb(255, 255, 255);
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+	border-radius: 14px;
+	margin-bottom: 2.5rem;
+	max-width: 900px;
 }
 
 .task-section h2 {
@@ -294,10 +300,12 @@ main {
 	color: #161F31;
 	padding-bottom: 1rem;
 	padding-top: 0.5rem;
+	margin: 1rem 0 0 1rem;
 }
 
 
 .task-descripton {
+	margin-left: 1.5rem;
 	font-size: 1.3rem;
 	font-weight: 500;
 	color: #161F31;
@@ -306,23 +314,28 @@ main {
 .task-div {
 	display: flex;
 	padding-left: 3rem;
-	font-size: 1.2rem;
 	font-weight: 500;
 	padding-top: 1.2rem;
+	margin-right: 1rem;
 }
 
 .task-div a {
 	text-decoration: none;
 	color: #6366F1;
+	font-size: 1.5rem;
 	white-space: nowrap;
 	padding-right: 1.5rem;
+}
+
+.task-div p {
+	font-size: 1.5rem;
 }
 
 /* THEORYBLOCK SECTION */
 
 .theoryblock-section {
 	padding-bottom: 1rem;
-	max-width: 760px;
+	max-width: 900px;
 	border: 1px solid rgba(0, 0, 255, .2);
 	background-color: rgb(255, 255, 255);
 	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
