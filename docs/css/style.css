@@ -291,7 +291,7 @@ main {
 	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 	border-radius: 14px;
 	margin-bottom: 2.5rem;
-	max-width: 900px;
+	max-width: 902px;
 }
 
 .task-section h2 {
@@ -335,7 +335,7 @@ main {
 
 .theoryblock-section {
 	padding-bottom: 1rem;
-	max-width: 900px;
+	max-width: 902px;
 	border: 1px solid rgba(0, 0, 255, .2);
 	background-color: rgb(255, 255, 255);
 	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
