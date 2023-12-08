@@ -432,6 +432,7 @@ main {
 	text-align: center;
 	vertical-align: middle;
 	white-space: pre-line;
+	
 }
 
 tr:nth-child(even) {
@@ -452,7 +453,7 @@ th[scope='row'] {
 
 .practise-section {
 	padding-bottom: 1rem;
-	max-width: 760px;
+	max-width: 902px;
 	border: 1px solid rgba(0, 0, 255, .2);
 	background-color: rgb(255, 255, 255);
 	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
