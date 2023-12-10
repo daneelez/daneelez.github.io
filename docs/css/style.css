@@ -388,7 +388,7 @@ main {
 
 .theorytablet-section {
 	padding-bottom: 1rem;
-	max-width: 760px;
+	max-width: 900px;
 	display: flex;
 	margin-bottom: 2.5rem;
 	flex-wrap: wrap;
@@ -421,9 +421,9 @@ main {
 }
 
 .theorytablet-section table {
-	margin: auto;
   border: 2px solid rgb(200, 200, 200);
 	box-shadow: 4px 4px 2px 1px white;
+	margin: 0 auto;
 }
 
 .theorytablet-section td, .theorytablet-section th {
