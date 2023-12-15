@@ -46,7 +46,7 @@ footer {
 footer p {
 	color: #94A3B8;
 	text-align: center;
-	display: grid;
+	justify-content: center;
 	margin-top: 0.5rem;
 }
 
@@ -191,7 +191,7 @@ summary::-webkit-details-marker {
 
 main {
 	margin-top: max(80px, 8vh);
-	padding: 0 1.5rem 1.5rem 1.5rem;
+	padding: 0 1.5rem 3rem 1.5rem;
 	margin-left: 16rem;
 	min-height: calc(92vh - max(80px, 8vh));
 	background-color: rgb(237, 238, 240);
@@ -442,6 +442,7 @@ main {
   border: 2px solid rgb(200, 200, 200);
 	box-shadow: 4px 4px 2px 1px white;
 	margin: 0 auto;
+	width: 95%;
 }
 
 .theorytablet-section td, .theorytablet-section th {
@@ -486,4 +487,45 @@ th[scope='row'] {
 	padding-bottom: 1rem;
 	padding-top: 0.5rem;
 	margin-left: 1rem;
+}
+
+.btn-up {
+	position: fixed; /* фиксированная позиция */
+	background-color:#6366F1; /* цвет заднего фона */
+	right: 20px; /* расстояние от правого края */
+	bottom: 0; /* расстояние от нижнего края */
+	border-top-left-radius: 8px; /* скругление верхнего левого угла */
+	border-top-right-radius: 8px; /* скругление верхнего правого угла */
+	cursor: pointer; /* форма курсора */
+	display: flex; /* не отображать элемент */
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.3s ease-in-out;
+	width: 12vw;
+	height: 5vh;
+	opacity: 1;
+	z-index: 999;
+}
+
+.btn-up::before {
+	content: "";
+	width: 12vw;
+	height: 4vh;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+
+.btn-up_hide {
+	display: none;
+}
+
+.btn-up_hiding {
+	opacity: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.btn-up:hover {
+		background-color: #512da8; /* цвет заднего фона при наведении */
+	}
 }

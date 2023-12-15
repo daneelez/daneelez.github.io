@@ -74,3 +74,30 @@
 	}
 
 }
+
+@media (max-width: 420px) {
+	
+	.theorytablet-section td, .theorytablet-section th {
+		font-size: smaller;
+	}
+
+	p {
+		word-break: break-word;
+		font-size: small;
+	}
+
+	.theoryblock-section {
+		font-size: large;
+		word-break: break-word;
+	}
+
+	.theoryblock-div h3 {
+		font-size: medium;
+		word-break: break-word;
+	}
+
+	.theorytablet-section table {
+		word-break: break-word;
+	}
+
+}
