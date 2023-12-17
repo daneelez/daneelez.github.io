@@ -78,12 +78,12 @@
 @media (max-width: 420px) {
 	
 	.theorytablet-section td, .theorytablet-section th {
-		font-size: smaller;
+		font-size: small;
 	}
 
 	p {
 		word-break: break-word;
-		font-size: small;
+		font-size: medium;
 	}
 
 	.theoryblock-section {
@@ -92,7 +92,7 @@
 	}
 
 	.theoryblock-div h3 {
-		font-size: medium;
+		font-size: larger;
 		word-break: break-word;
 	}
 
