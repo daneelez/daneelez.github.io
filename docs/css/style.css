@@ -5,30 +5,12 @@ html {
 	height: calc(100vh - max(80px, 8vh));
 }
 
-a::before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 4px;
-	background-color:#6366F1;
-	bottom: 0;
-	left: 0;
-	transform-origin: right;
-	transform: scaleX(0);
-	transition: transform .3s ease-in-out;
-}
-
-a:hover::before {
-	transform-origin: left;
-	transform: scaleX(1);
-}
-
 h1, h2, h3, h4, p {
 	cursor: default;
 }
 
 body {
-	font-family: 'Inter', sans-serif;
+	font-family: 'Poppins', sans-serif;
   font-weight: 500;
 	position: relative;
 	cursor: auto;
@@ -84,6 +66,24 @@ header {
 	margin-right: 2vw;
 }
 
+.nav-ul li a::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	background: #3bc1a0;
+	bottom: 0;
+	left: 0;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform .3s ease-in-out;
+}
+
+.nav-ul li a:hover::before {
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
 .nav-ul li a {
 	text-decoration: none;
 	color: #F1F5F980;
@@ -111,7 +111,6 @@ aside {
 .aside-ul {
 	display: flex;
 	flex-direction: column;
-	font-weight: 400;
 	text-align: left;
 }
 
@@ -131,14 +130,13 @@ aside {
 }
 
 .summary-li {
-	font-weight: 400;
 	text-align: left;
 	padding-top: 0.3rem;
-	margin-left: 1.2rem;
-	font-size: 1.3rem;
+	margin-left: 2.4rem;
 }
 
 .summary-li a {
+	font-size: 1.25rem;
 	color: #475569;
 	text-decoration: none;
 	margin-bottom: 8px;
@@ -260,7 +258,7 @@ main {
 
 .information-section {
 	background-color: #0F172A;
-	border-radius: 5%;
+	border-radius: clamp(5px, 8%, 50px);
 	max-width: 720px;
 }
 
@@ -368,6 +366,7 @@ main {
 	padding-bottom: 1rem;
 	padding-top: 0.5rem;
 	margin-left: 1rem;
+	margin-right: 0.5rem;
 }
 
 
@@ -465,7 +464,7 @@ main {
 	
 }
 
-tr:nth-child(even) {
+.theorytablet-section tr:nth-child(even) {
   background-color: #eee;
 }
 
