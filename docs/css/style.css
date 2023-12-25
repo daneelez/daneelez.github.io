@@ -128,16 +128,37 @@ aside {
 .summary-li {
 	text-align: left;
 	padding-top: 0.3rem;
-	margin-left: 2.4rem;
+	margin-left: 2.8rem;
 }
 
 .summary-li a {
 	font-size: 1.25rem;
-	color: #475569;
+	color: #6366F1;
 	text-decoration: none;
 	margin-bottom: 8px;
-	padding-left: 10px;
-  display: block;
+	display: inline-block;
+	-webkit-transition: all .3s ease;
+          transition: all .3s ease;
+}
+
+.summary-li a:hover {
+	color: #3bc1a0;
+}
+
+.summary-li a::after {
+	background-color: #3bc1a0;
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.summary-li a:hover:after,
+.summary-li a:focus:after {
+    width: 100%;
 }
 
 summary::-webkit-details-marker {
@@ -175,6 +196,7 @@ summary::-webkit-details-marker {
 	font-size: 1.4rem;
 	position: relative;
 }
+
 .aside-details .aside-summary .icon::before {
 	display: inline-block;
 	width: 1.6rem;
@@ -229,7 +251,16 @@ main {
 	font-size: 1.5rem;
 	font-weight: 500;
 	margin-left: 0.25rem;
-	color: #475569;
+	color: #6366F1;
+}
+
+.main-section p a {
+	-webkit-transition: all .3s ease;
+          transition: all .3s ease;
+}
+
+.main-section p a:hover {
+	color: #3bc1a0;
 }
 
 .main-image {
@@ -337,6 +368,28 @@ main {
 	font-size: 1.5rem;
 	white-space: nowrap;
 	padding-right: 1.5rem;
+	-webkit-transition: all .3s ease;
+          transition: all .3s ease;
+}
+
+.task-div a:hover {
+	color: #3bc1a0;
+}
+
+.task-div a::after {
+	background-color: #3bc1a0;
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.task-div a:hover:after,
+.task-div a:focus:after {
+    width: 100%;
 }
 
 .task-div p {
@@ -500,7 +553,7 @@ th[scope='row'] {
 .btn-up {
 	position: fixed; /* фиксированная позиция */
 	background-color:#6366F1; /* цвет заднего фона */
-	right: 20px; /* расстояние от правого края */
+	right: 5vw; /* расстояние от правого края */
 	bottom: 0; /* расстояние от нижнего края */
 	border-top-left-radius: 8px; /* скругление верхнего левого угла */
 	border-top-right-radius: 8px; /* скругление верхнего правого угла */
@@ -509,7 +562,7 @@ th[scope='row'] {
 	align-items: center;
 	justify-content: center;
 	transition: opacity 0.3s ease-in-out;
-	width: max(8vw, 30px);
+	width: min(20vw, 50px);
 	height: 4vh;
 	opacity: 1;
 	z-index: 999;
@@ -517,7 +570,7 @@ th[scope='row'] {
 
 .btn-up::before {
 	content: "";
-	width: max(8vw, 30px);
+	width: min(20vw, 50px);
 	height: 4vh;
 	background: transparent no-repeat center center;
 	background-size: 100% 100%;
