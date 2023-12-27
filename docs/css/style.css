@@ -247,6 +247,7 @@ main {
 
 .main-section p a {
 	vertical-align: 0.5rem;
+	display: inline-block;
 	text-decoration: none;
 	font-size: 1.5rem;
 	font-weight: 500;
@@ -261,6 +262,22 @@ main {
 
 .main-section p a:hover {
 	color: #3bc1a0;
+}
+
+.main-section p a::after {
+	background-color: #3bc1a0;
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.main-section p a:hover:after,
+.main-section p a:focus:after {
+    width: 100%;
 }
 
 .main-image {
@@ -284,13 +301,16 @@ main {
 /* INFORMATION SECTION */
 
 .information-section {
-	background-color: #0F172A;
-	border-radius: clamp(5px, 8%, 50px);
-	max-width: 720px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+	border: 1px solid rgba(0, 0, 255, .2);
+	border-radius: 14px;
+	max-width: 902px;
+	margin-bottom: 2.5rem;
 }
 
 .information-section h1 {
-	color: #F1F5F9;
+	color: #161F31;
 	padding: 1rem 1.5rem 1rem 1.5rem;
 	font-size: 2.2rem;
 	line-height: 3.2rem;
@@ -308,21 +328,43 @@ main {
 }
 
 .information-div p {
-	color: #F1F5F9;
+	color: #161F31;
 	font-size: 1rem;
 	padding-left: 0.5rem;
 }
 
 .information-div p a {
-	color: #F1F5F9;
+	color: #6366F1;
 	text-decoration: none;
 	font-size: 1rem;
 	padding-left: 0.5rem;
+	-webkit-transition: all .3s ease;
+          transition: all .3s ease;
+}
+
+.information-div p a:hover {
+	color: #3bc1a0;
+}
+
+.information-div p a::after {
+	background-color: #3bc1a0;
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.information-div p a:hover:after,
+.information-div p a:focus:after {
+    width: 100%;
 }
 
 .directions {
 	padding-top: 1rem;
-	border-top: 2px solid #F1F5F9;;
+	border-top: 2px solid #161F31;
 }
 
 /* TASKS SECTION */
@@ -395,6 +437,29 @@ main {
 .task-div p {
 	font-size: 1.5rem;
 }
+
+/* formulation section */
+
+.formulation-section {
+	padding-bottom: 1rem;
+	max-width: 902px;
+	border: 1px solid rgba(0, 0, 255, .2);
+	background-color: rgb(255, 255, 255);
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+	border-radius: 14px;
+	margin-bottom: 2.5rem;
+}
+
+.formulation-section h2 {
+	font-size: 2rem;
+	font-weight: 500;
+	color: #161F31;
+	padding-bottom: 1rem;
+	padding-top: 0.5rem;
+	margin-left: 1rem;
+	margin-right: 0.5rem;
+}
+
 
 /* THEORYBLOCK SECTION */
 
@@ -589,4 +654,57 @@ th[scope='row'] {
 	.btn-up:hover {
 		background-color: #512da8; /* цвет заднего фона при наведении */
 	}
+}
+
+/* PEREVOD BALLOV */
+
+
+.perevod-ballov-div {
+	max-width: 600px;
+	margin-block: 2rem 1rem;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgba(0, 0, 255, .2);
+	padding: 20px;
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+	border-radius: 14px;
+}
+
+.perevod-ballov-div h2 {
+	font-size: 2rem;
+	font-weight: 500;
+	color: #161F31;
+	padding-bottom: 1rem;
+	padding-top: 0.5rem;
+}
+
+.ball-label {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+input, select {
+	width: 100%;
+	padding: 1rem;
+	box-sizing: border-box;
+	margin-bottom: 1rem;
+}
+
+.ball-button {
+	background-color: #512da8;
+	color: #F1F5F9;
+	padding: 0.8rem 1.6rem;
+	font-size: 1rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.ball-button:hover {
+	background-color: #3bc1a0;
+}
+
+#result {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top: 20px;
 }

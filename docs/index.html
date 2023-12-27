@@ -3,3 +3,17 @@ title: Главная
 permalink: index
 layout: default
 ---
+<div class="perevod-ballov-div">
+        <h2>Калькулятор баллов</h2>
+        <label class="ball-label" for="subject">Выберите предмет:</label>
+        <select id="subject" onchange="updatePlaceholder()">
+					<option value="ru_lang">Русский язык</option>
+            <option value="math">Математика</option>
+            <option value="computerScience">Информатика</option>
+        </select>
+        <label class="ball-label" for="numberOfTasks">Введите количество баллов:</label>
+        <input type="number" id="numberOfTasks" placeholder="Введите число от 1 до 50" min="1" max="54">
+        <button class="ball-button" onclick="calculate()">Рассчитать</button>
+        <div id="result"></div>
+    </div>
+    <script src='{{"/js/perevod_ballov.js" | responsive_url }}''></script>
