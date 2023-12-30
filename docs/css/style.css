@@ -568,6 +568,9 @@ main {
 	box-shadow: 4px 4px 2px 1px white;
 	margin: 0 auto;
 	width: 95%;
+	border-collapse: collapse;
+  padding: 0;
+  table-layout: fixed;
 }
 
 .theorytablet-section td, .theorytablet-section th {
@@ -575,7 +578,7 @@ main {
 	border: 2px solid rgb(190, 190, 190);
 	text-align: center;
 	white-space: pre-line;
-	
+	word-wrap:break-word
 }
 
 .theorytablet-section tr:nth-child(even) {
